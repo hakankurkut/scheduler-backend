@@ -69,7 +69,7 @@ def retrieve():
 
         return jsonify(parties)
     except:
-        return jsonify({ 'error': 'incorrect headers' }
+        return jsonify({ 'error': 'incorrect headers' })
 
 @app.route('/api/delete', methods=['GET', 'POST'])
 def delete():
